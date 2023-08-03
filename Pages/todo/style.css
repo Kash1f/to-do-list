@@ -1,0 +1,152 @@
+
+/* STYLES FOR TODO LIST */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: white;
+    padding: 10px;
+    background-image: linear-gradient(
+        88deg, 
+        hsl(263deg 100% 50%) 100%,
+        hsl(268deg 100% 50%) 100%,
+        hsl(273deg 100% 50%) 100%,
+        hsl(277deg 100% 50%) 100%,
+        hsl(289deg 100% 50%) 100%,
+        hsl(285deg 100% 35%) 33%,
+        hsl(288deg 100% 35%) 38%,
+        hsl(292deg 100% 35%) 64%,
+        hsl(295deg 100% 35%) 48%,
+        hsl(298deg 100% 35%) 52%,
+        hsl(301deg 100% 36%) 57%,
+        hsl(304deg 100% 38%) 62%, 
+        hsl(307deg 100% 39%) 88%,
+        hsl(309deg 100% 41%) 71%,
+        hsl(311deg 100% 43%) 76%,
+        hsl(313deg 100% 44%) 86%,
+        hsl(315deg 100% 46%) 86%,
+        hsl(316deg 100% 47%) 90%,
+        hsl(318deg 100% 49%) 95%,
+        hsl(319deg 100% 50%) 100%
+      );
+}
+
+.todo-list{
+    width: 100%;
+    max-width: 540px;
+    background: rgb(196, 195, 195);
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 20px;
+}
+
+.todo-list h2{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    color:chocolate;
+    justify-content: center;
+    font-size: 38px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+}
+
+#input-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    padding: 7.5px;
+    background: #edeef0;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-weight: 599;
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 20px;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 8px 40px;
+    background: #ffa500;
+    color: #000000;
+    font-size: 19px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 39%;
+}
+
+ul li{
+    list-style: none;
+    font-size: 20px;
+    padding: 20px 8px 12px 50px;
+    user-select: none;
+    position: relative;
+    font-weight: 500;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+    background: white;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid black;
+    top: 18px;
+    left: 8px;
+    cursor: pointer;
+}
+
+ul li.checked{
+    text-decoration: line-through;
+    border: none;
+}
+
+ul li.checked:before{
+    border: 1px solid white;
+    text-decoration: line-through;
+    background-image: url('img/tick.png');
+    background-size: cover;
+    background-position: center;
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 17px;
+    width: 40px;
+    height: 25px;
+    font-size: 22px;
+    color: #ffa500;
+    list-style: 40px;
+    text-align: center;
+    border-radius: 50px;
+    font-weight: 599;
+}
+
+ul li span:hover{
+    background: #808080;
+    font-size: 20px;
+} 
