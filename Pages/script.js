@@ -11,7 +11,7 @@ signUpButton.addEventListener('click', () => {
 	container.classList.add("right-panel-active");
 });
 
-//creating function to signup
+//signup function
 function signup(event){
   event.preventDefault();
 
@@ -56,4 +56,3 @@ function login(event){
     alert("Re-enter credentials or create new account")
   }
 }
-//end//
