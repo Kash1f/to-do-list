@@ -25,14 +25,14 @@ function signup(event){
   localStorage.setItem("passwords", password_variable)
 }
 
-//function to reset
+//reset function
 function resetFields(){
   document.getElementById("name").reset()
   document.getElementById("email").reset()
   document.getElementById("password").reset()
 }
 
-//creating function to login
+//login function
 function login(event){
   event.preventDefault();
 
